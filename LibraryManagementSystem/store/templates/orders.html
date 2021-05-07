@@ -13,12 +13,9 @@
                 <tr>
                     <th>Sno.</th>
                     <th>Image</th>
-                    <th>Product</th>
-                    <th>Date</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                    <th>Total</th>
-                    <th>Status</th>
+                    <th>Book</th>
+                    <th>Issue Date</th>
+                 <th style="margin-left: 10px;">Status</th>
                 </tr>
             </thead>
             <tbody>
@@ -26,14 +23,14 @@
                 {% for order in orders %}
                 <tr>
                     <td>{{forloop.counter}}</td>
-                    <td><img style="height: 80px;" class="rounded-circle" src="{{order.product.image.url}}" alt=""></td>
+                    <td><img style="height: 80px;" class="" src="{{order.product.image.url}}" alt=""></td>
                     <td>{{order.product.name}}</td>
                     <td>{{order.date}}</td>
-                    <td>{{order.price|currency}}</td>
-                    <td>{{order.quantity}}</td>
-                    <td>{{order.quantity|multiply:order.price|currency}}</td>
+                    <td>{{order.Isbn}}</td>
+                   
+                  
                     {% if order.status %}
-                    <td><small class="badge badge-success">Completed</small></td>
+                    <td><small class="badge badge-success">Issued</small></td>
                     {%else%}
                     <td><small class="badge badge-warning">Pending</small></td>
                     {% endif %}

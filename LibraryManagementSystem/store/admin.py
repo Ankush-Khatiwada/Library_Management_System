@@ -6,7 +6,7 @@ from .models.orders import Order
 
 
 class AdminProduct(admin.ModelAdmin):
-    list_display = ['name', 'price', 'category']
+    list_display = ['name', 'Isbn', 'category']
 
 
 
