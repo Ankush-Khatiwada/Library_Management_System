@@ -15,6 +15,7 @@
                     <th>Image</th>
                     <th>Product</th>
                     <th>ISBN</th>
+                    <th>Author</th>
                    
                 </tr>
             </thead>
@@ -23,10 +24,12 @@
                 {% for product in products %}
                 <tr>
                     <td>{{forloop.counter}}</td>
-                    <td><img style="height: 80px;" class="rounded-circle" src="{{product.image.url}}" alt=""></td>
+                    <td><img style="height: 80px;"  src="{{product.image.url}}" alt=""></td>
                     <td>{{product.name}}</td>
-                    <td>{{product.order.Isbn}}</td>
-                    <td>{{product|cart_quantity:request.session.cart}}</td>
+
+                    <td>{{product.Isbn}}</td>
+                    <td>{{product.author}}</td>
+                   
                   
                 </tr>
 
@@ -54,8 +57,7 @@
 <!-- modal -->
 
   <!-- Modal -->
-  
+  {% endblock %}
 
 
 
-{% endblock %}
