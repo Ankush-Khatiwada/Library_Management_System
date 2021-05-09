@@ -21,7 +21,7 @@ class CheckOut(View):
             print(cart.get(str(product.id)))
             order = Order(customer=Customer(id=customer),
                           product=product,
-                          Isbn=product.Isbn,
+                         
                           address=address,
                           phone=phone,
                           quantity=cart.get(str(product.id)))

@@ -6,16 +6,17 @@
 {% load custom_filter %}
 <div class="container">
    <div class="border rounded p-4 m-4">
-        <p class="display-4 pl-4 ml-4">Your Orders</p>
+        <p class="display-4 pl-4 ml-4">Your Issues</p>
         <hr>
         <table class="table">
             <thead>
                 <tr>
                     <th>Sno.</th>
                     <th>Image</th>
-                    <th>Book</th>
-                    <th>Issue Date</th>
-                 <th>Status</th>
+                    <th>Book Name</th>
+                    <th> Issue Date</th>
+                    <th>ISBN</th>
+                    <th>Status</th>
                 </tr>
             </thead>
             <tbody>
@@ -23,12 +24,12 @@
                 {% for order in orders %}
                 <tr>
                     <td>{{forloop.counter}}</td>
-                    <td><img style="height: 80px;" class="" src="{{order.product.image.url}}" alt=""></td>
+                    <td><img style="height: 80px;" class="rounded-circle" src="{{order.product.image.url}}" alt=""></td>
                     <td>{{order.product.name}}</td>
                     <td>{{order.date}}</td>
-                    <td>{{order.Isbn}}</td>
-                   
+                    <td>{{order.product.ISBN}}</td>
                   
+                   
                     {% if order.status %}
                     <td><small class="badge badge-success">Issued</small></td>
                     {%else%}

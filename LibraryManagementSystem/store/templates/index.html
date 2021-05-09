@@ -14,7 +14,7 @@
 		<div class="col-lg-3 mx-auto">
 			<div class="list-group">
 
-				<a href="/" class="list-group-item list-group-item-action">All Products</a>
+				<a href="/" class="list-group-item list-group-item-action">All Books</a>
 
 				{% for category in categories %}
 				<a href="/?category={{category.id}}"
@@ -30,10 +30,8 @@
 				<div class="card mx-auto mb-3" id={{product.id}} style="width: 18rem;">
 					<img class="card-img-top" src="{{product.image.url}}" alt="Card image cap">
 					<div class="card-body">
-						Name:<p class="card-title">{{product.name}}</p>
-						ISBN:<p class="card-text"><b>{{product.Isbn}}</b></p>
-						Author:<p class="card-text"><b>{{product.author}}</b></p>
-						Description:<p class="card-text"><b>{{product.Description}}</b></p>
+						<p class="card-title">{{product.name}}</p>
+						<p class="card-text"><b>{{product.ISBN}}</b></p>
 						<!-- {{product | is_in_cart:request.session.cart }} -->
 					</div>
 
@@ -47,7 +45,7 @@
 								<input hidden type="text" name='remove' value='True'>
 								<input type="submit" value=" - " class="btn btn-block btn-light border-right">
 							</form>
-							<div class="text-center col">{{product|cart_quantity:request.session.cart}} in LibraryCart</div>
+							<div class="text-center col">{{product|cart_quantity:request.session.cart}} in Cart</div>
 							<form action="/#{{product.id}}" class="col-2 " method="post">
 								{% csrf_token %}
 								<input hidden type="text" name='product' value='{{product.id}}'>
