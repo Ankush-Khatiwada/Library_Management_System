@@ -10,199 +10,176 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <title>E_Library</title>
+  <title>E-Library</title>
 
   <style>
-    nav{
-      background-color: white;
-    }
-    .one-edge-shadow {
-              box-shadow: 0 8px 2px -5px rgb(246, 245, 245);
-}
+   
 .display-8{
   font-weight: 200;
   font-size: 30px;
 }
-
-body {
- margin: 0;
- padding: 0;
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
 }
-.main {
- max-height: 550px;;
- background-color: #292c2f;
- color: white;
- font-size: 38pt;
- text-align: center;
- line-height: 550px;
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
 }
-footer{
- position: fixed;
- bottom: 0;
+.site-footer hr.small
+{
+  margin:20px 0
 }
-.footer-distributed{
- background-color: rgb(66, 61, 52);
- box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
- box-sizing: border-box;
- width: 100%;
- text-align: left;
- font: bold 16px sans-serif;
- 
- padding: 55px 50px;
- margin-top: 80px;
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
 }
- 
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right{
- display: inline-block;
- vertical-align: top;
+.site-footer a
+{
+  color:#737373;
 }
- 
-.footer-distributed .footer-left{
- width: 40%;
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
 }
- 
-.footer-distributed h3{
- color:  #ffffff;
- font: normal 36px 'Cookie', cursive;
- margin: 0;
+.footer-links
+{
+  padding-left:0;
+  list-style:none
 }
- 
-.footer-distributed h3 span{
- color:  #5383d3;
+.footer-links li
+{
+  display:block
 }
- 
- 
-.footer-distributed .footer-links{
- color:  blanchedalmond;
- margin: 20px 0 12px;
- padding: 0;
+.footer-links a
+{
+  color:#737373
 }
- 
-.footer-distributed .footer-links a{
- display:inline-block;
- line-height: 1.8;
- text-decoration: none;
- color:  inherit;
- color: blanchedalmond;
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
 }
- 
-.footer-distributed .footer-company-name{
- color:  #8f9296;
- font-size: 14px;
- font-weight: normal;
- margin: 0;
+.footer-links.inline li
+{
+  display:inline-block
 }
- 
- 
-.footer-distributed .footer-center{
- width: 35%;
+.site-footer .social-icons
+{
+  text-align:right
 }
- 
-.footer-distributed .footer-center i{
- background-color:  #33383b;
- color: #ffffff;
- font-size: 25px;
- width: 38px;
- height: 38px;
- border-radius: 50%;
- text-align: center;
- line-height: 42px;
- margin: 10px 15px;
- vertical-align: middle;
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
 }
- 
-.footer-distributed .footer-center i.fa-envelope{
- font-size: 17px;
- line-height: 38px;
+.copyright-text
+{
+  margin:0
 }
- 
-.footer-distributed .footer-center p{
- display: inline-block;
- color: #ffffff;
- vertical-align: middle;
- margin:0;
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
 }
- 
-.footer-distributed .footer-center p span{
- display:block;
- font-weight: normal;
- font-size:14px;
- line-height:2;
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
 }
- 
-.footer-distributed .footer-center p a{
- color:  #5383d3;
- text-decoration: none;;
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
 }
- 
-.footer-distributed .footer-right{
- width: 20%;
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
 }
- 
-.footer-distributed .footer-company-about{
- line-height: 20px;
- color:  #92999f;
- font-size: 13px;
- font-weight: normal;
- margin: 0;
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
 }
- 
-.footer-distributed .footer-company-about span{
- display: block;
- color:  #ffffff;
- font-size: 14px;
- font-weight: bold;
- margin-bottom: 20px;
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
 }
- 
-.footer-distributed .footer-icons{
- margin-top: 25px;
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
 }
- 
-.footer-distributed .footer-icons a{
- display: inline-block;
- width: 35px;
- height: 35px;
- cursor: pointer;
- background-color:  #33383b;
- border-radius: 2px;
- 
- font-size: 20px;
- color: #ffffff;
- text-align: center;
- line-height: 35px;
- 
- margin-right: 3px;
- margin-bottom: 5px;
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
 }
- 
- 
-@media (max-width: 880px) {
- 
- .footer-distributed{
- font: bold 14px sans-serif;
- 
- }
- 
- .footer-distributed .footer-left,
- .footer-distributed .footer-center,
- .footer-distributed .footer-right{
- display: block;
- width: 100%;
- margin-bottom: 40px;
- text-align: center;
- }
- 
- .footer-distributed .footer-center i{
- margin-left: 0;
- }
- .main {
- line-height: normal;
- font-size: auto;
- }
- 
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
 }
   </style>
 </head>
@@ -214,42 +191,43 @@ footer{
   <nav class="one-edge-shadow 
   sticky-top navbar 
   navbar-expand-lg
-   navbar-light bg-black" style="background-color: rgb(66, 61, 52); color: blanchedalmond;">
-    <a class="navbar-brand" href="/"  style=" color: blanchedalmond;">E-Library</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   navbar-light bg-white" style="background-color: #26272b !important;">
+    <a class="navbar-brand" href="/" style="color: #bbb;">E-Library</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="/store" style="color: blanchedalmond;">Store <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/store" style="color: #bbb;">Store <span class="sr-only">(current)</span></a>
         </li>
 
       </ul>
 
 
-      <ul class=" navbar-nav my-2 my-lg-0" >
+      <ul class=" navbar-nav my-2 my-lg-0">
         <li class="nav-item ">
-          <a class="nav-link" href="/cart" style="color: blanchedalmond;">Cart 
+          <a class="nav-link" href="/cart" > <li><img src="https://img.icons8.com/fluent/2x/fast-cart.png" alt="" style="height: 40px;"></li>
             <span class="badge badge-info">{{request.session.cart.keys|length}}</span>
             <span class="sr-only">(current)</span></a>
         </li>
         {% if request.session.customer %}
         
         <li class="nav-item ">
-          <a class="nav-link" href="/orders" style="color: blanchedalmond;">Orders<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/orders" style="color: #bbb;">Orders<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link" href="/logout" style="color: blanchedalmond;">Logout<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/logout" style="color: #bbb;">Logout<span class="sr-only">(current)</span></a>
         </li>
         {% else %}
        
         <li class="nav-item ">
-          <a class="nav-link" href="/signup" style="color: blanchedalmond;">Signup<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/signup" style="color: #bbb;"> Signup<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link" href="/login" style="color: blanchedalmond;">Login<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/login" style="color: #bbb;">Login<span class="sr-only">(current)</span></a>
         </li>
         {% endif %}
 
@@ -260,11 +238,55 @@ footer{
 
     </div>
   </nav>
-
-
   
 
-  {% block content %}{% endblock %}
+
+    {% block content %}{% endblock %}
+
+      <!-- Site footer -->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h6>About</h6>
+              <p class="text-justify">E_library.com Access our digital library from our premises or your home or on the go.</p>
+            </div>
+  
+          
+            <div class="col-xs-6 col-md-3">
+              <h6>Quick Links</h6>
+              <ul class="footer-links">
+                <li><a href="/cart">Cart</a></li>
+                <li><a href="/signup">Signup</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/orders">Order</a></li>
+                <li><a href="/store">Store</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+           <a href="#">E-Library</a>.
+              </p>
+            </div>
+  
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li><img src="https://img.icons8.com/fluent/2x/instagram-new.png" alt="" style="height: 40px;"></li>
+                <li><img src="https://img.icons8.com/fluent/2x/twitter.png" alt="" style="height: 40px;"></li>
+                <li><img src="https://img.icons8.com/fluent/2x/facebook-new.png" alt="" style="height: 40px;"></li>
+                <li><img src="https://img.icons8.com/fluent/2x/linkedin.png" alt="" style="height: 40px;"></li>
+             
+                  
+              </ul>
+            </div>
+          </div>
+        </div>
+  </footer>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

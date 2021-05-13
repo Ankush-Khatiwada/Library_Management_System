@@ -4,6 +4,35 @@
 
 {% load cart %}
 {% load custom_filter %}
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+	<ol class="carousel-indicators">
+	  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+	  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+	  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+	</ol>
+	<div class="carousel-inner">
+	  <div class="carousel-item active">
+		<img class="d-block w-100" src="https://i.pinimg.com/originals/b2/cc/17/b2cc178bac304755da610f24a2c3bf3d.jpg" alt="First slide" style="height: 500px;">
+	  </div>
+	  <div class="carousel-item">
+		<img class="d-block w-100" src="https://i.pinimg.com/originals/b5/2c/72/b52c7218da362d87b47dc4a7a686fb1b.jpg" alt="First slide" style="height: 500px;">
+	  </div>
+	  <div class="carousel-item">
+		<img class="d-block w-100" src="https://cdn.quotesgram.com/img/30/92/2108454412-facebook_banner_quotes_by_kiara_vestigium-d675w30.jpg" alt="First slide" style="height: 500px;">
+	  </div>
+	</div>
+	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+	  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	  <span class="sr-only">Previous</span>
+	</a>
+	<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+	  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	  <span class="sr-only">Next</span>
+	</a>
+  </div>
+
+
 <!-- body -->
 <div class="container-fluid mt-3">
 	<div class="row">
@@ -14,7 +43,7 @@
 		<div class="col-lg-3 mx-auto">
 			<div class="list-group">
 
-				<a href="/" class="list-group-item list-group-item-action">All Books</a>
+				<a href="/" class="list-group-item list-group-item-action">All Products</a>
 
 				{% for category in categories %}
 				<a href="/?category={{category.id}}"
@@ -22,7 +51,6 @@
 				{% endfor %}
 			</div>
 		</div>
-		<!--categiry ends -->
 
 		<!-- all products -->
 		<div id='products' class="col-lg-9 mx-auto">
@@ -31,10 +59,10 @@
 				<div class="card mx-auto mb-3" id={{product.id}} style="width: 18rem;">
 					<img class="card-img-top" src="{{product.image.url}}" alt="Card image cap">
 					<div class="card-body">
-						 <p class="card-title">Name :{{product.name}}</p>
-						 <p class="card-text"><b>ISBN: {product.ISBN}</b></p>
-						 <p class="card-text"><b>Author: {product.author}</b></p>
-					 
+						<p class="card-title">{{product.name}}</p>
+						<p class="card-text"><b>{{product.Isbn}}</b></p>
+						<p class="card-text"><b>{{product.author}}</b></p>
+						<p class="card-text"><b>{{product.description}}</b></p>
 						<!-- {{product | is_in_cart:request.session.cart }} -->
 					</div>
 
