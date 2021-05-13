@@ -59,10 +59,11 @@
 				<div class="card mx-auto mb-3" id={{product.id}} style="width: 18rem;">
 					<img class="card-img-top" src="{{product.image.url}}" alt="Card image cap">
 					<div class="card-body">
-						<p class="card-title">{{product.name}}</p>
-						<p class="card-text"><b>{{product.Isbn}}</b></p>
-						<p class="card-text"><b>{{product.author}}</b></p>
-						<p class="card-text"><b>{{product.description}}</b></p>
+						<p class="card-text"><b>Name: </b>{{product.name}}</p>
+						<p class="card-text"><b>ISBN: </b> {{product.Isbn}}</p>
+						
+						<p class="card-text"><b>Description:</b> {{product.description}}</p>
+						<p class="card-text"><b>Author:</b> {{product.author}}</p>
 						<!-- {{product | is_in_cart:request.session.cart }} -->
 					</div>
 
